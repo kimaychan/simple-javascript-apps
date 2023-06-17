@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, section {
+  height: 100%;
+  width: 100%;
+}
+
+.counter {
+  font-size: 160px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
