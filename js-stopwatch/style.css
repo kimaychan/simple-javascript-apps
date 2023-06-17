@@ -1,0 +1,82 @@
+:root {
+  --background: #004050;
+  --regular: #E7E5DF;
+  --positive: #287c43;
+  --neutral: #ba6f0e;
+  --negative: #b01f1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, .dashboard {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  padding: 20px 40px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+h1.title {
+  color: var(--regular);
+  margin: auto;
+  width: fit-content;
+}
+
+.duration {
+  color: var(--regular);
+  display: flex;
+  align-items: baseline;
+}
+
+#hours, #minutes, #seconds {
+  font-size: 150px;
+}
+
+#milliseconds {
+  font-size: 100px;
+}
+
+.controls {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.btn-control {
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  width: 130px;
+}
+
+.btn-positive {
+  background: var(--positive);
+  color: var(--regular);
+}
+
+.btn-negative {
+  background: var(--negative);
+  color: var(--regular);
+}
+
+.btn-neutral {
+  background: var(--neutral);
+  color: var(--regular);
+}
